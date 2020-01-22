@@ -65,7 +65,7 @@ while(True) :	# the script
 
 		time.sleep(4)	# wait, probably useless, TEST IT!!!
 	
-		for i in xrange (x):
+		for i in range (x):
 			try:
 				driver.find_element_by_partial_link_text('Add Friend').click()	# clicks Add Friend
 				driver.get("https://www.facebook.com") # reloads : facebook will not think that the script is a bot + time delay (new friends appear)
